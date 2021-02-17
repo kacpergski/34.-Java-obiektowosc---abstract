@@ -45,16 +45,62 @@ public class SoccerSchoolApp {
 
                 break;
             case 2:
+                System.out.println("Name: ");
+                name = scanner.nextLine();
+                System.out.println("Surname: ");
+                surname = scanner.nextLine();
+                System.out.println("Birth year: ");
+                birthYear = scanner.nextInt();
+                scanner.nextLine(); // n
+                System.out.println("Diet: ");
+                diet = scanner.nextLine();
+                System.out.println("Date of Start(f.e. 10.01.2020): ");
+                dateOfStart = scanner.nextLine();
+                System.out.println("Club: ");
+                clubName = scanner.nextLine();
+                System.out.println("Distance: ");
+                int distance = scanner.nextInt();
+                scanner.nextLine();
+                System.out.println("Best time: ");
+                double bestTime = scanner.nextDouble();
+                scanner.nextLine();
+
+                Runner runner = new Runner(name, surname, birthYear, diet, dateOfStart,clubName, distance, bestTime);
+                soccerSchool.add(runner);
+
+
+
 
                 break;
             case 3:
+                System.out.println("Name: ");
+                name = scanner.nextLine();
+                System.out.println("Surname: ");
+                surname = scanner.nextLine();
+                System.out.println("Birth year: ");
+                birthYear = scanner.nextInt();
+                scanner.nextLine(); // n
+                System.out.println("Diet: ");
+                diet = scanner.nextLine();
+                System.out.println("Date of Start(f.e. 10.01.2020): ");
+                dateOfStart = scanner.nextLine();
+                System.out.println("Club: ");
+                clubName = scanner.nextLine();
+                System.out.println("Style: ");
+                String style = scanner.nextLine();
+                System.out.println("Best time: ");
 
+                bestTime = scanner.nextDouble();
+                scanner.nextLine();
+                Swimmer swimmer = new Swimmer (name, surname, birthYear, diet, dateOfStart,clubName, style, bestTime );
+                soccerSchool.add(swimmer);
                 break;
             case 4:
+                soccerSchool.displayAll();
 
                 break;
             case 5:
-
+                soccerSchool.displayAge();
                 break;
 
 

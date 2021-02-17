@@ -13,4 +13,12 @@ public class SoccerSchool {
         }
     }
     }
+
+    public void displayAge (){
+        if (indexPerson<persons.length) {
+            for (int i = 0; i < indexPerson; i++) {
+                persons[i].displayAge();
+            }
+        }
+    }
 }
