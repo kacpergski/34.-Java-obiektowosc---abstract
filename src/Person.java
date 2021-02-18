@@ -1,4 +1,4 @@
-public class Person {
+public abstract class Person {
     private String name;
     private String surname;
     private int birthYear;
@@ -17,4 +17,7 @@ public class Person {
     public void displayAge(){
         System.out.println("Age of "+ name + " " + surname + ": " + (2021-birthYear) + " years") ;
     }
+
+    public abstract void training();
+
 }

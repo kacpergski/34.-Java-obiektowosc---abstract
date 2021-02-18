@@ -3,7 +3,7 @@ import java.util.Scanner;
 
 public class SoccerSchoolApp {
     public static void main(String[] args) {
-        SoccerSchool soccerSchool = new SoccerSchool(); // utworzenie nowej szkoły obiektu o ref sockerCHOOL KLASY Sockerschool
+        SportSchool sportSchool = new SportSchool(); // utworzenie nowej szkoły obiektu o ref sockerCHOOL KLASY Sockerschool
        Scanner scanner = new Scanner(System.in, "UTF-8");
        int option;
        String name, surname, diet, dateOfStart, clubName;
@@ -41,7 +41,7 @@ public class SoccerSchoolApp {
                 System.out.println("Club: ");
                 clubName = scanner.nextLine();
                 Footballer footballer = new Footballer(name, surname, birthYear, diet, dateOfStart,clubName, position);
-                soccerSchool.add(footballer);
+                sportSchool.add(footballer);
 
                 break;
             case 2:
@@ -66,7 +66,7 @@ public class SoccerSchoolApp {
                 scanner.nextLine();
 
                 Runner runner = new Runner(name, surname, birthYear, diet, dateOfStart,clubName, distance, bestTime);
-                soccerSchool.add(runner);
+                sportSchool.add(runner);
 
 
 
@@ -93,14 +93,17 @@ public class SoccerSchoolApp {
                 bestTime = scanner.nextDouble();
                 scanner.nextLine();
                 Swimmer swimmer = new Swimmer (name, surname, birthYear, diet, dateOfStart,clubName, style, bestTime );
-                soccerSchool.add(swimmer);
+                sportSchool.add(swimmer);
                 break;
             case 4:
-                soccerSchool.displayAll();
+                sportSchool.displayAll();
 
                 break;
             case 5:
-                soccerSchool.displayAge();
+                sportSchool.displayAge();
+                break;
+            case 6:
+                sportSchool.trainAll();
                 break;
 
 

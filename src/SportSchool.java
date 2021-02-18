@@ -1,4 +1,4 @@
-public class SoccerSchool {
+public class SportSchool {
 
     private Person [] persons = new Person[50]; // zadeklarowanie w pamieci tablicy 50 elementowej klasy Person  o referencji persons
     private  int indexPerson;
@@ -21,4 +21,12 @@ public class SoccerSchool {
             }
         }
     }
+
+    public void trainAll (){
+        if (indexPerson<persons.length) {
+            for (int i = 0; i < indexPerson; i++) {
+                persons[i].training();
+           }
+        }
+   }
 }

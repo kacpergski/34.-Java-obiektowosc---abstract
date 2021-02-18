@@ -1,4 +1,4 @@
-public class Sportsman extends Person {
+public abstract class  Sportsman extends Person {
     private String diet;
     private String dateOfStart;
     private String clubName;
@@ -9,10 +9,12 @@ public class Sportsman extends Person {
         this.dateOfStart = dateOfStart;
         this.clubName = clubName;
     }
-    public void  display(){
+    public  void  display(){
         super.display();
         System.out.println("Diet: " + diet);
         System.out.println("Date of start: " + dateOfStart);
         System.out.println("Club: " + clubName);
     }
+
+
 }

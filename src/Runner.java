@@ -12,4 +12,8 @@ public class Runner extends Sportsman{
         System.out.println("Distance: " + distance);
         System.out.println("Best time: " + bestTime);
     }
+
+    public void training() {
+        System.out.println("Running");
+    }
 }

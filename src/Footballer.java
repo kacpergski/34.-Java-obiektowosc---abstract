@@ -5,8 +5,15 @@ public class Footballer extends Sportsman {
         super(name, surname, birthYear, diet, dateOfStart, clubName);
         this.position = position;
     }
-    public void  display(){
+
+    public void display() {
         super.display();
         System.out.println("Position: " + position);
-            }
+    }
+
+    public void training() {
+        System.out.println("Drybling");
+    }
+
 }
+

@@ -13,4 +13,8 @@ public class Swimmer extends Sportsman {
         System.out.println("Distance: " + style);
         System.out.println("Best time: " + bestTime);
     }
+
+    public void training() {
+        System.out.println("Swimming");
+    }
 }
