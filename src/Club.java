@@ -1,25 +1,27 @@
 public class Club {
-    private String name;
+    public String getClubName;
+    public String getDateOfCreation;
+    private String clubName;
     private String dateOfCreation;
 
-    public Club(String name, String dateOfCreation) {
-        this.name = name;
+    public Club(String clubName, String dateOfCreation) {
+        this.clubName = clubName;
         this.dateOfCreation = dateOfCreation;
     }
 
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public String getDateOfCreation() {
-        return dateOfCreation;
+    public void setClubName(String clubName) {
+        this.clubName = clubName;
     }
 
     public void setDateOfCreation(String dateOfCreation) {
         this.dateOfCreation = dateOfCreation;
+    }
+
+    public String getClubName() {
+        return clubName;
+    }
+
+    public String getDateOfCreation() {
+        return dateOfCreation;
     }
 }
