@@ -2,8 +2,8 @@ public class Swimmer extends Sportsman {
     private String style;
     private double bestTime;
 
-    public Swimmer(String name, String surname, int birthYear, String diet, String dateOfStart, String clubName, String style, double bestTime) {
-        super(name, surname, birthYear, diet, dateOfStart, clubName);
+    public Swimmer(String name, String surname, int birthYear, Club club, String diet, String dateOfStart, String style, double bestTime) {
+        super(name, surname, birthYear, club, diet, dateOfStart);
         this.style = style;
         this.bestTime = bestTime;
     }
