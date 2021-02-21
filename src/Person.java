@@ -16,8 +16,8 @@ public abstract class Person {
         System.out.println("Name: " + name);
         System.out.println("Surname: " + surname);
         System.out.println("Birth year: " + birthYear);
-        System.out.println("Club name: " + club.getClubName);
-        System.out.println("Club date: " + club.getDateOfCreation);
+        System.out.println("Club name: " + club.getClubName());
+        System.out.println("Club date: " + club.getDateOfCreation());
     }
     public void displayAge(){
         System.out.println("Age of "+ name + " " + surname + ": " + (2021-birthYear) + " years") ;

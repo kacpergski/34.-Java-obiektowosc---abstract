@@ -2,7 +2,7 @@ public class Club {
     public String getClubName;
     public String getDateOfCreation;
     private String clubName;
-    private String dateOfCreation;
+    private 1String dateOfCreation;
 
     public Club(String clubName, String dateOfCreation) {
         this.clubName = clubName;
@@ -24,4 +24,11 @@ public class Club {
     public String getDateOfCreation() {
         return dateOfCreation;
     }
+
+//    public void  display(){
+//
+//        System.out.println("Club name: " + clubName);
+//        System.out.println("Date club: " + dateOfCreation);
+//    }
+
 }
